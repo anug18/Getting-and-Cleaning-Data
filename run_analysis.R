@@ -76,8 +76,8 @@ names(dfMSR_msd)<-gsub("gravity", "Gravity", names(dfMSR_msd))
 ########################################################################
 
 #Add Activity and Subject
-dfTidyData <- aggregate(. ~SubjectId + ActivityId, dfMSR_msd, mean)
-dfTidyData <- dfTidyData[order(dfTidyData$SubjectId,dfTidyData$ActivityId),]
+dfTidyData <- aggregate(. ~SubjectId + Activity, dfMSR_msd, mean)
+dfTidyData <- dfTidyData[order(dfTidyData$SubjectId,dfTidyData$Activity),]
 
 ## Code is given in the assignment instruction
 write.table(dfTidyData, file = "TidyData.txt", row.names = FALSE)
