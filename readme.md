@@ -27,4 +27,5 @@ HOW THIS PROGRAM OPERATES
 1. Reads all the data sets (measurements, activity and Subject data set) from train and test folders 
 2. Reads the variabe names and assigns them to the data frame
 3. Filters the mean and standard variation related variable names i.e. all the variable names that have mean or std in them
-4. Converts all the R incomatible column names to valid ones using
+4. Converts all the R incompatible column names to valid ones using
+5. Finally it outputs average of all the features for all the combinations of Activity and Subjects
